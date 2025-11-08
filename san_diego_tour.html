@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Diego Adventure - Nov 8, 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ffeef8 0%, #e8f4f8 50%, #fff5e6 100%);
+            padding: 20px;
+            line-height: 1.6;
+            color: #4a4a4a;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #ffd1dc 0%, #b4e4ff 100%);
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 4px solid #ffb6c1;
+        }
+        
+        .header h1 {
+            color: #6b4e71;
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+        }
+        
+        .header .date {
+            color: #8b6f8e;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+        
+        .header .group {
+            color: #7b8fa6;
+            margin-top: 8px;
+            font-size: 1em;
+        }
+        
+        .content {
+            padding: 25px;
+        }
+        
+        .stop {
+            background: linear-gradient(135deg, #fff9f3 0%, #f8f0ff 100%);
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 5px solid #d4a5d9;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .stop-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffb6d9 0%, #c9a8e8 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .stop h2 {
+            color: #7b5e9d;
+            margin: 10px 0;
+            font-size: 1.6em;
+        }
+        
+        .time {
+            background: #ffe6f0;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            color: #9d5b7f;
+            font-weight: bold;
+            margin: 8px 0;
+            font-size: 0.95em;
+        }
+        
+        .stop p {
+            color: #666;
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+        
+        .address {
+            background: #e8f5ff;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-style: italic;
+            color: #5a7fa0;
+        }
+        
+        .tip {
+            background: #fffacd;
+            border-left: 4px solid #ffd966;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            color: #7a6b2e;
+        }
+        
+        .tip strong {
+            color: #9d7d28;
+        }
+        
+        .budget {
+            background: linear-gradient(135deg, #d4f4dd 0%, #cfe9ff 100%);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 25px;
+            border: 2px solid #a8d5ba;
+        }
+        
+        .budget h3 {
+            color: #4a7c59;
+            margin-bottom: 12px;
+            font-size: 1.4em;
+        }
+        
+        .budget p {
+            color: #5a7a66;
+            line-height: 1.8;
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, #ffd1e0 0%, #d4c5f9 100%);
+            padding: 25px;
+            text-align: center;
+            color: #7b6f8e;
+            font-style: italic;
+        }
+        
+        .emoji {
+            font-size: 1.3em;
+            margin: 0 5px;
+        }
+        
+        .option {
+            background: #fff;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border-left: 3px solid #b8a8d8;
+        }
+        
+        .option-title {
+            color: #8b7ba8;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.6em;
+            }
+            
+            .header .date {
+                font-size: 1em;
+            }
+            
+            .stop h2 {
+                font-size: 1.3em;
+            }
+            
+            .content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌊 San Diego Adventure 🌅</h1>
+            <div class="date">Saturday, November 8, 2025</div>
+            <div class="group">Party of 4 | Uber Transportation</div>
+        </div>
+        
+        <div class="content">
+            <div class="stop">
+                <span class="stop-number">1</span>
+                <h2>Little Italy Mercato</h2>
+                <span class="time">⏰ 8:00 AM - 11:00 AM</span>
+                <div class="address">📍 West Date Street (between Kettner Blvd & Front St), Little Italy</div>
+                <p>Start your day at San Diego County's largest farmers' market! Six blocks of fresh produce, artisan foods, coffee, pastries, and local crafts.</p>
+                
+                <div class="tip">
+                    <strong>💡 Must-Try:</strong>
+                    <ul style="margin: 8px 0 0 20px;">
+                        <li>Fresh sea urchin from Captain Jack's Seafood</li>
+                        <li>Coffee from Joe's on the Nose (arrive early - long lines!)</li>
+                        <li>Green smoothies from Green Fix</li>
+                        <li>Fresh-baked pastries and breads</li>
+                        <li>Local produce perfect for snacking</li>
+                    </ul>
+                </div>
+                
+                <div class="tip">
+                    <strong>🚗 Parking Tip:</strong> Street parking can be tricky. Consider having your Uber drop you near Kettner Blvd entrance.
+                </div>
+            </div>
+            
+            <div class="stop">
+                <span class="stop-number">2</span>
+                <h2>Sunset Cliffs Natural Park</h2>
+                <span class="time">⏰ 12:00 PM - 2:30 PM</span>
+                <div class="address">📍 Sunset Cliffs Blvd, Point Loma (about 15 min from Little Italy)</div>
+                <p>Stunning coastal views, dramatic cliffs, and walking trails. Perfect for photos and enjoying the ocean breeze!</p>
+                
+                <div class="tip">
+                    <strong>🥾 Walking Tips:</strong>
+                    <ul style="margin: 8px 0 0 20px;">
+                        <li>Wear comfortable shoes - rocky terrain</li>
+                        <li>Stay on marked trails and away from cliff edges</li>
+                        <li>Bring water and sunscreen</li>
+                        <li>Great photo opportunities at every turn</li>
+                        <li>Multiple viewing points along the path</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="stop">
+                <span class="stop-number">3</span>
+                <h2>Pizza Time!</h2>
+                <span class="time">⏰ 3:00 PM - 4:30 PM</span>
+                <p>Head back to Little Italy for an authentic pizza experience. Here are some budget-friendly options:</p>
+                
+                <div class="option">
+                    <div class="option-title">🍕 Landini's Pizzeria (Recommended!)</div>
+                    <div class="address">📍 1326 India St, Little Italy</div>
+                    <p>New York-style pizza by the slice! Family-owned, fresh ingredients, quick service. Open until 1 AM on weekends. Great value and authentic flavor. Slices range $5-8.</p>
+                </div>
+                
+                <div class="option">
+                    <div class="option-title">🍕 Mr. Moto Pizza</div>
+                    <div class="address">📍 1830 India St, Little Italy</div>
+                    <p>Award-winning "San Diego's Best Gourmet Pizza" since 2016. Thin crust with a signature fluffy edge. Available by the slice. Try their famous garlic knots! Slices around $6-8.</p>
+                </div>
+                
+                <div class="option">
+                    <div class="option-title">🍕 Isola Pizza Bar</div>
+                    <div class="address">📍 1831 India St, Little Italy</div>
+                    <p>Wood-fired Neapolitan-style pizza. Authentic Roma vibes with modern Italian atmosphere. Pizzas $12-18 (can split among group).</p>
+                </div>
+                
+                <div class="tip">
+                    <strong>💰 Budget Tip:</strong> For staying within $10-20 per person, Landini's or Mr. Moto by the slice is your best bet. Each person can get 2-3 slices plus a drink!
+                </div>
+            </div>
+            
+            <div class="budget">
+                <h3>💵 Budget Breakdown (Per Person)</h3>
+                <p><strong>Mercato:</strong> $8-12 (coffee, pastry, snacks)</p>
+                <p><strong>Pizza:</strong> $10-20 (2-3 slices + drink)</p>
+                <p><strong>Uber Rides:</strong> ~$10-15 per person (split 4 ways, 2 rides total)</p>
+                <p><strong>Total per person:</strong> ~$30-50</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🌴 Have an amazing San Diego adventure! 🌴</p>
+            <p style="margin-top: 10px;">Remember to stay hydrated, wear sunscreen, and take lots of photos! 📸</p>
+        </div>
+    </div>
+</body>
+</html>
